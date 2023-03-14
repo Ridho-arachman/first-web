@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icons-1.10.3/font/bootstrap-icons.css">
+    <style>
+     /*buat footer ke bawah*/
+      html{
+        position: relative;
+      }
+      body{
+        margin-bottom: 100px;
+      }
+     /*--akhir--*/
+      nav ul li a{
+        text-decoration: none;
+        color: white;
+      }
+      .containerheader{
+        padding: 7px 0;
+      }
+      .containerheader img{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        border: solid 5px black;
+        margin-top: 6px;
+      }
+      hr{
+        width:150px;
+        border-top: 3px solid #999;
+        }
+      section{
+        min-height: 600px;
+      }
+      footer{
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+        padding-top:30px ;
+      }
+      footer p a{
+        text-decoration: none;
+      }
+      footer p i{
+        color: salmon;
+      }
+     </style>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar bg-dark sticky-top">
+      <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <a class="navbar-brand text-white" href="#">My Website</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav justify-conten-end text-white">
+            <li class="nav-item"><a class="" href="">About</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+
+      </div>
+     </nav>
+<!--akhir>
+
+
+    <!--header-->
+      <div class="containerheader bg-light text-center">
+        <img src="Asset/1.jpg" alt="" />
+        <h1>M Ridho A</h1>
+        <p>Student | Web Developer</p>
+      </div>
+    <!--akhir-->
+    
+    <!--about-->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="text-center">About </h2>
+            <hr class="mx-auto">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 offset-sm-2">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi nostrum quis accusantium sed quos, deleniti dignissimos ducimus asperiores ratione incidunt cumque quia aliquam at tenetur id! Neque amet officiis, nisi.</p>
+          </div>
+          <div class="col-sm-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro distinctio officia quos, recusandae maiores repudiandae ipsam enim veritatis non officiis temporibus velit neque natus omnis minima dolorum voluptatibus. Molestiae, voluptas?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--akhir about-->
+    
+    <!--Portofolio-->
+    <section class="Portfolio bg-light" id="Portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="text-center">Portfolio</h2>
+            <hr class="mx-auto">
+          </div>
+        </div>
+       
+       <div class="row">
+         <div class="col-4">
+           <img src="Asset/11.jpg" alt="">
+         </div>
+         <div class="col-4">
+           <img src="Asset/12.jpg" alt="">
+         </div>
+         <div class="col-4">
+           <img src="Asset/13.jpg" alt="">
+         </div>
+         <div class="col-4">
+           <img src="Asset/14.jpg" alt="">
+         </div>
+         <div class="col-4">
+           <img src="Asset/15.jpg" alt="">
+         </div>
+         <div class="col-4">
+           <img src="Asset/16.jpg" alt="">
+         </div>
+       </div>
+      </div>
+    </section>
+    <!--akhir-->
+    
+    <!--contac-->
+    <section class="contac" id="contac">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="text-center">Contact</h2>
+            <hr class="mx-auto">
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-sm-8 mx-auto">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Nama</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan nama">
+              </div>
+              <div class="mb-3">
+               <label for="exampleInputEmail1" class="form-label">Email</label>
+               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Email">
+               </div>
+               <div class="mb-3">
+                 <label for="exampleInputEmail1" class="form-label">No.Telepon</label>
+                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan No.telp">
+               </div>
+               <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                 <option selected>--Chose Category--</option>
+                 <option value="1">Student</option>
+                 <option value="2">Web Developer</option>
+               </select>
+               
+               <div class="form-floating">
+                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                 <label for="floatingTextarea2">Masukkan Pesan</label>
+               </div>
+               <br>
+               <button class="btn btn-primary" type="submit">kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--akhir-->
+    
+    <!--footer-->
+    <footer class="bg-dark">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="text-white">&copy; 2023 | Built with <i class="bi bi-phone-fill"></i>  by<a href="https://www.instagram.com/ridho_arachman/?next=%2F">Muhammad Ridho Arachman</a>.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--akhir-->
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
